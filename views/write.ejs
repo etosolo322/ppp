@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <title>wwwrite</title>
+  <link rel="stylesheet" type="text/css" href="public/css/event.css">
+  <link rel="stylesheet" type="text/css" href="public/css/menu.css">
+</head>
+<body>
+    <% include blocks/left.ejs %>
+<div class="clients">
+
+  <% for (var i=0; i < mainCenter.length; i++) { %>
+      <div class="post">
+        <h3><a href="/menu/<%= ( 1 ) %>">
+        <%= mainCenter[i].name  %>        </a></h3>
+        <p><%= mainCenter[i].date  %></p>
+        <p><%= mainCenter[i].text  %></p>
+  </div>
+  <% } %>
+
+</div>
+    <div class="main_event">
+<h1> ADD NEW POST </h1>
+<br>
+      <form action="/write" method="post">
+            <label for="date">name</label><br>
+      <input type="text" name="name" id="title"><br>
+
+      <label for="name">date</label><br>
+<input type="text" name="date" id="title"><br>
+
+      <label for="text">text</label><br>
+      <textarea name="text" id="content" cols="30" rows="10"></textarea><br>
+      <button>Send</button>
+    </form>
+  </div>
+</body>
+</html>

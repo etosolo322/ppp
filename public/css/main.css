@@ -1,0 +1,24 @@
+#main_main{
+	display: block;
+	position: relative;
+	height: 130%;
+	overflow-x:  auto;
+  background-image: url("../image/main.jpg");
+  background-size: cover;
+  overflow: hidden;
+	height:100%;
+	text-indent: 0px;
+	border: 1px solid #888;
+	-moz-transition: all 3s ease-out;
+	-o-transition: all 3s ease-out;
+	-webkit-transition: all 3s ease-out;
+	z-index: 9;
+}
+
+#main_main:hover {
+	position: relative;
+-webkit-transform: scale(1.5);
+-moz-transform: scale(1.5);
+-o-transform: scale(1.5);
+z-index: 1;
+}
